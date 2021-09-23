@@ -1,0 +1,7 @@
+Trigger outs:
+- cycle out LED doesn't work, but trigger outs all produce a voltage. The voltage is ~4.88V; will have to check at some point whether this is sufficient for triggering most modules. 
+
+
+Trig IN triggers much too easily (even with zero input voltage). Tracked down to missing ground collection on the transistor base!
+
+CV in works ok, although at high voltage it starts to clip. I think the offset can be moved, because there's room at the other end of the range. Maybe use a trimmer for the final circuit...

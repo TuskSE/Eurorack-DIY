@@ -1,0 +1,29 @@
+- DONE:make the 2nd cv knob affect the P slider values. First need to think about the maths of what I actually want it to do
+- make a LED indicator for the adjusted LED slider values, just to check that the feel is what it should be. 
+
+
+
+
+
+You can hear the voltatge wobble in the V sliders, if the values are no quantized
+ 
+it is not sensitive to triggers from my clock divider. (May be the fault of my clock divider!)
+
+the "skip" probability option causes cycles to end prematurely
+
+the trigger outputs still need coding up
+
+silent/inactivated steps still contribute to the voltage output 
+
+
+
+
+- link up trigger inputs to cycling 
+- develop input/output bits
+- add accent
+
+
+Step length control seems to work ok, but it would be really helpful if there was visual
+feedback on what the "length" of the P sliders is. 
+
+There is no way turn a channel "off" once started

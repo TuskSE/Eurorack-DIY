@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>G:\Musical Electronics\1 Fractional Clock Divider\Fractional-clock-multiplier\Kicad schematic\Fractional clock divider PCB 2\Fractional clock divider PCB1.sch</source>
+    <date>01/11/2020 12:24:24</date>
+    <tool>Eeschema (5.0.1)-3</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Fractional Clock Multiplier prototype</title>
+        <company>Sam Tusk</company>
+        <rev/>
+        <date/>
+        <source>Fractional clock divider PCB1.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="H1">
+      <value>EURO_PWR_2X8</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical</footprint>
+      <libsource lib="eurocad" part="EURO_PWR_2X8" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD62353</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>1N4001</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD64A3C</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>1N4001</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD64BB4</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1_Small" description="Polarized capacitor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD64EEB</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="CP1_Small" description="Polarized capacitor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD64F31</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>Teensy-LC</value>
+      <footprint>teensy:TeensyLC_fixed_pads</footprint>
+      <libsource lib="teensy" part="Teensy-LC" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD67F0E</tstamp>
+    </comp>
+    <comp ref="Trigger/Clock_in1">
+      <value>PJ301M-12</value>
+      <footprint>Eurocad:PJ301M-12</footprint>
+      <libsource lib="eurocad" part="PJ301M-12" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD68CC8</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD6997D</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>33k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD69D64</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>2N3904</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD6A22D</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>1N4001</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD6A37A</tstamp>
+    </comp>
+    <comp ref="CV_in1">
+      <value>PJ301M-12</value>
+      <footprint>Eurocad:PJ301M-12</footprint>
+      <libsource lib="eurocad" part="PJ301M-12" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD6E46D</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD6ECFD</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD6EE35</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TL074</value>
+      <footprint>Package_DIP:DIP-14_W7.62mm_LongPads</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tl071.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="TL074" description="Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD71205</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>15k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD723B8</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>11k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD77053</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>91k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD77233</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD849EF</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>1N4001</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD86E26</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>1N4001</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD86F22</tstamp>
+    </comp>
+    <comp ref="RV3">
+      <value>10k</value>
+      <footprint>Eurocad:Alpha9mmPot</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_POT_US" description="Potentiometer, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD98D43</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>10k</value>
+      <footprint>Eurocad:Alpha9mmPot</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_POT_US" description="Potentiometer, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD9E565</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>10k</value>
+      <footprint>Eurocad:Alpha9mmPot</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_POT_US" description="Potentiometer, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BD9FB7C</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDB145C</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>47k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDB166F</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDB8DAA</tstamp>
+    </comp>
+    <comp ref="CycleOutJack1">
+      <value>PJ301M-12</value>
+      <footprint>Eurocad:PJ301M-12</footprint>
+      <libsource lib="eurocad" part="PJ301M-12" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDBAD9C</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>2N3904</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDC30F5</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDCBD36</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDCC2C8</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDDE9F0</tstamp>
+    </comp>
+    <comp ref="DigiOutJack1">
+      <value>PJ301M-12</value>
+      <footprint>Eurocad:PJ301M-12</footprint>
+      <libsource lib="eurocad" part="PJ301M-12" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDDE9F8</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>2N3904</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDDEA08</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDDEA1A</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDDEA21</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDE45C5</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>47k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDE45CC</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF760F</tstamp>
+    </comp>
+    <comp ref="DigiThruJack1">
+      <value>PJ301M-12</value>
+      <footprint>Eurocad:PJ301M-12</footprint>
+      <libsource lib="eurocad" part="PJ301M-12" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF7617</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>2N3904</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF7627</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF7639</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BDF7640</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE0064F</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>47k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE00656</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>330</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE1AEBB</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE1B149</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>Rotary_Encoder_Switch</value>
+      <footprint>Eurocad:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Rotary_Encoder_Switch" description="Rotary encoder, dual channel, incremental quadrate outputs, with switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE311BB</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5BE8D16E</tstamp>
+    </comp>
+    <comp ref="Reset_In1">
+      <value>PJ301M-12</value>
+      <footprint>Eurocad:PJ301M-12</footprint>
+      <libsource lib="eurocad" part="PJ301M-12" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9B1449</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9B1458</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>33k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9B145F</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>2N3904</value>
+      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9B146D</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>1N4001</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C9B1474</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA124DF</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA124E6</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA1A637</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA1A63E</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA22AB5</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA22ABC</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>1k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA696F1</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA696F8</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_SPDT_MSM</value>
+      <footprint>Eurocad:SPDT toggle on-off-on</footprint>
+      <libsource lib="Switch" part="SW_SPDT_MSM" description="Switch, single pole double throw, center OFF position"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA7D26E</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>SW_SPDT_MSM</value>
+      <footprint>Eurocad:SPDT toggle on-off-on</footprint>
+      <libsource lib="Switch" part="SW_SPDT_MSM" description="Switch, single pole double throw, center OFF position"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA7D324</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x06_Female</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x06_Female" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC396D9</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x06_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC39824</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Conn_01x09_Female</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x09_Female" description="Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC4AA41</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x09_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x09_Male" description="Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CC4AC08</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x15_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x15_Male" description="Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDF2846</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x15_Female</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x15_Female" description="Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CDF298C</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_SPST</value>
+      <footprint>Eurocad:SPST momentary push PBS105</footprint>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D014B74</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L11.5mm_W4.0mm_P10.00mm_MKT</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA78211</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>Capacitor_THT:C_Rect_L11.5mm_W4.0mm_P10.00mm_MKT</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CA784C8</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Operational" part="LM2902">
+      <aliases>
+        <alias>LM324</alias>
+        <alias>TLC274</alias>
+        <alias>TLC279</alias>
+        <alias>TL074</alias>
+        <alias>LM324A</alias>
+        <alias>MCP6004</alias>
+        <alias>TL084</alias>
+        <alias>TL064</alias>
+        <alias>LMV324</alias>
+        <alias>LMC6484</alias>
+        <alias>MCP604</alias>
+        <alias>MC33079</alias>
+        <alias>MC33174</alias>
+        <alias>MC33179</alias>
+        <alias>OPA1604</alias>
+        <alias>OPA4134</alias>
+        <alias>OPA4340UA</alias>
+        <alias>OPA4376</alias>
+        <alias>MCP6L94</alias>
+        <alias>TSV914</alias>
+        <alias>ADA4807-4</alias>
+      </aliases>
+      <description>Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm2902-n.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x8.7mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TSSOP*4.4x5mm*P0.65mm*</fp>
+        <fp>SSOP*5.3x6.2mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2902</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V+" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="-" type="input"/>
+        <pin num="10" name="+" type="input"/>
+        <pin num="11" name="V-" type="power_in"/>
+        <pin num="12" name="+" type="input"/>
+        <pin num="13" name="-" type="input"/>
+        <pin num="14" name="~" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x06_Female">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x06_Male">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x09_Female">
+      <description>Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x09_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x09_Male">
+      <description>Generic connector, single row, 01x09, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x09_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x15_Female">
+      <description>Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x15_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x15_Male">
+      <description>Generic connector, single row, 01x15, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x15_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP1_Small">
+      <description>Polarized capacitor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_POT_US">
+      <description>Potentiometer, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_POT_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Rotary_Encoder_Switch">
+      <description>Rotary encoder, dual channel, incremental quadrate outputs, with switch</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>RotaryEncoder*Switch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Rotary_Encoder_Switch</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="B" name="B" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+        <pin num="S1" name="S1" type="passive"/>
+        <pin num="S2" name="S2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N4001">
+      <aliases>
+        <alias>1N4002</alias>
+        <alias>1N4003</alias>
+        <alias>1N4004</alias>
+        <alias>1N4005</alias>
+        <alias>1N4006</alias>
+        <alias>1N4007</alias>
+        <alias>BA157</alias>
+        <alias>BA158</alias>
+        <alias>BA159</alias>
+      </aliases>
+      <description>50V 1A General Purpose Rectifier Diode, DO-41</description>
+      <docs>http://www.vishay.com/docs/88503/1n4001.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4001</field>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPDT_MSM">
+      <description>Switch, single pole double throw, center OFF position</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPDT_MSM</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="2N3904">
+      <description>0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92</description>
+      <docs>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N3904</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="eurocad" part="EURO_PWR_2X8">
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">EURO_PWR_2X8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GATE" type="BiDi"/>
+        <pin num="2" name="GATE" type="BiDi"/>
+        <pin num="3" name="CV" type="BiDi"/>
+        <pin num="4" name="CV" type="BiDi"/>
+        <pin num="5" name="+5V" type="BiDi"/>
+        <pin num="6" name="+5V" type="power_out"/>
+        <pin num="7" name="+12V" type="BiDi"/>
+        <pin num="8" name="+12V" type="power_out"/>
+        <pin num="9" name="GND" type="BiDi"/>
+        <pin num="10" name="GND" type="BiDi"/>
+        <pin num="11" name="GND" type="BiDi"/>
+        <pin num="12" name="GND" type="BiDi"/>
+        <pin num="13" name="GND" type="BiDi"/>
+        <pin num="14" name="GND" type="power_out"/>
+        <pin num="15" name="-12V" type="BiDi"/>
+        <pin num="16" name="-12V" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="eurocad" part="PJ301M-12">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">PJ301M-12</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="teensy" part="Teensy-LC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Teensy-LC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="0_RX1_MOSI1_Touch" type="BiDi"/>
+        <pin num="3" name="1_TX1_MISO1_Touch" type="BiDi"/>
+        <pin num="4" name="2" type="BiDi"/>
+        <pin num="5" name="3_RX1_PWM_Touch" type="BiDi"/>
+        <pin num="6" name="4_TX1_PWM_Touch" type="BiDi"/>
+        <pin num="7" name="5_TX1_MISO1" type="BiDi"/>
+        <pin num="8" name="6_RX3_CS1_PWM" type="BiDi"/>
+        <pin num="9" name="7_RX3_MOSI0" type="BiDi"/>
+        <pin num="10" name="8_TX3_MISO0" type="BiDi"/>
+        <pin num="11" name="9_RX2_PWM" type="BiDi"/>
+        <pin num="12" name="10_TX2_CS0_PWM" type="BiDi"/>
+        <pin num="13" name="11_MOSI0" type="BiDi"/>
+        <pin num="14" name="12_MISO0" type="BiDi"/>
+        <pin num="15" name="17_Vin" type="output"/>
+        <pin num="16" name="3.3V" type="power_in"/>
+        <pin num="17" name="GND" type="power_in"/>
+        <pin num="18" name="Program" type="input"/>
+        <pin num="19" name="26_A12/DAC" type="BiDi"/>
+        <pin num="20" name="13_LED_SCK0" type="BiDi"/>
+        <pin num="21" name="14_A0_SCK0" type="BiDi"/>
+        <pin num="22" name="15_A1_Touch" type="BiDi"/>
+        <pin num="23" name="16_A2_SCL0_PWM_Touch" type="BiDi"/>
+        <pin num="24" name="17_A3_SDA0_PWM_Touch" type="BiDi"/>
+        <pin num="25" name="18_A4_SDA0_Touch" type="BiDi"/>
+        <pin num="26" name="19_A5_SCL0_Touch" type="BiDi"/>
+        <pin num="27" name="20_A6_SCK1_PWM_TX3" type="BiDi"/>
+        <pin num="28" name="21_A7_MOSI1_RX1" type="BiDi"/>
+        <pin num="29" name="22_A8_SCL1_PWM_Touch" type="BiDi"/>
+        <pin num="30" name="23_A9_SDA1_PWM_Touch" type="BiDi"/>
+        <pin num="31" name="3.3V_max100mA" type="power_out"/>
+        <pin num="32" name="GND" type="power_in"/>
+        <pin num="33" name="Vin" type="power_in"/>
+        <pin num="34" name="VUSB" type="power_in"/>
+        <pin num="35" name="AREF" type="input"/>
+        <pin num="36" name="24_A10" type="BiDi"/>
+        <pin num="37" name="25_A11" type="BiDi"/>
+        <pin num="38" name="D+" type="BiDi"/>
+        <pin num="39" name="D-" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Operational">
+      <uri>G:\Utilities\KiCad\share\kicad\library/Amplifier_Operational.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>G:\Utilities\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>G:\Utilities\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>G:\Utilities\KiCad\share\kicad\library/Diode.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>G:\Utilities\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>G:\Utilities\KiCad\share\kicad\library/Transistor_BJT.lib</uri>
+    </library>
+    <library logical="eurocad">
+      <uri>G:\Utilities\KiCad\share\kicad\library/eurocad.lib</uri>
+    </library>
+    <library logical="teensy">
+      <uri>G:\Utilities\KiCad\share\kicad\library/teensy.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D12-Pad2)">
+      <node ref="R26" pin="1"/>
+      <node ref="D12" pin="2"/>
+    </net>
+    <net code="2" name="/CV_ind_LED_Length">
+      <node ref="J2" pin="1"/>
+      <node ref="U2" pin="30"/>
+    </net>
+    <net code="3" name="/CV_ind_LED_Divs">
+      <node ref="J2" pin="2"/>
+      <node ref="U2" pin="29"/>
+    </net>
+    <net code="4" name="Net-(D13-Pad2)">
+      <node ref="R28" pin="1"/>
+      <node ref="D13" pin="2"/>
+    </net>
+    <net code="5" name="Net-(D10-Pad2)">
+      <node ref="R24" pin="1"/>
+      <node ref="D10" pin="2"/>
+    </net>
+    <net code="6" name="/SW_CVassgn">
+      <node ref="J3" pin="12"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="7" name="Net-(D11-Pad2)">
+      <node ref="R25" pin="1"/>
+      <node ref="D11" pin="2"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="D6" pin="2"/>
+      <node ref="J6" pin="1"/>
+      <node ref="R19" pin="1"/>
+      <node ref="J5" pin="9"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J6" pin="9"/>
+      <node ref="R14" pin="1"/>
+      <node ref="Trigger/Clock_in1" pin="1"/>
+      <node ref="Trigger/Clock_in1" pin="2"/>
+      <node ref="Q4" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="J4" pin="1"/>
+      <node ref="J3" pin="15"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J3" pin="2"/>
+      <node ref="J2" pin="6"/>
+      <node ref="J1" pin="6"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="J4" pin="2"/>
+      <node ref="J4" pin="15"/>
+      <node ref="RV3" pin="1"/>
+      <node ref="DigiThruJack1" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="DigiOutJack1" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="CycleOutJack1" pin="1"/>
+      <node ref="D9" pin="2"/>
+      <node ref="RV2" pin="1"/>
+      <node ref="RV1" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="H1" pin="10"/>
+      <node ref="CV_in1" pin="2"/>
+      <node ref="CV_in1" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="17"/>
+      <node ref="U2" pin="32"/>
+      <node ref="H1" pin="9"/>
+      <node ref="H1" pin="14"/>
+      <node ref="H1" pin="13"/>
+      <node ref="H1" pin="12"/>
+      <node ref="H1" pin="11"/>
+      <node ref="D10" pin="1"/>
+      <node ref="SW4" pin="2"/>
+      <node ref="D11" pin="1"/>
+      <node ref="Q5" pin="1"/>
+      <node ref="R20" pin="1"/>
+      <node ref="Reset_In1" pin="1"/>
+      <node ref="Reset_In1" pin="2"/>
+      <node ref="D7" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="D12" pin="1"/>
+      <node ref="SW2" pin="C"/>
+      <node ref="D14" pin="1"/>
+      <node ref="R23" pin="2"/>
+      <node ref="D13" pin="1"/>
+    </net>
+    <net code="9" name="/EncoderB_F">
+      <node ref="J4" pin="8"/>
+      <node ref="SW2" pin="B"/>
+    </net>
+    <net code="10" name="/Pot_Length_F">
+      <node ref="RV1" pin="2"/>
+      <node ref="J4" pin="4"/>
+    </net>
+    <net code="11" name="/Pot_Divisions_F">
+      <node ref="J4" pin="5"/>
+      <node ref="RV3" pin="2"/>
+    </net>
+    <net code="12" name="/Pot_CVamt_F">
+      <node ref="RV2" pin="2"/>
+      <node ref="J4" pin="6"/>
+    </net>
+    <net code="13" name="/EncoderA_F">
+      <node ref="SW2" pin="A"/>
+      <node ref="J4" pin="7"/>
+    </net>
+    <net code="14" name="/EncoderSw_F">
+      <node ref="SW2" pin="S2"/>
+      <node ref="J4" pin="9"/>
+      <node ref="R23" pin="1"/>
+    </net>
+    <net code="15" name="/SW_DivEuc1_F">
+      <node ref="SW1" pin="1"/>
+      <node ref="J4" pin="10"/>
+    </net>
+    <net code="16" name="/SW_DivEuc2_F">
+      <node ref="J4" pin="11"/>
+      <node ref="SW1" pin="3"/>
+    </net>
+    <net code="17" name="/SW_OutMode1">
+      <node ref="U2" pin="4"/>
+      <node ref="J3" pin="13"/>
+    </net>
+    <net code="18" name="/SW_OutMode2_F">
+      <node ref="SW4" pin="3"/>
+      <node ref="J4" pin="14"/>
+    </net>
+    <net code="19" name="/SW_DivEuc1">
+      <node ref="J3" pin="10"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="20" name="/SW_DivEuc2">
+      <node ref="U2" pin="3"/>
+      <node ref="J3" pin="11"/>
+    </net>
+    <net code="21" name="/SW_OutMode2">
+      <node ref="J3" pin="14"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="22" name="/SW_OutMode1_F">
+      <node ref="SW4" pin="1"/>
+      <node ref="J4" pin="13"/>
+    </net>
+    <net code="23" name="Net-(U2-Pad14)">
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="24" name="Net-(U2-Pad15)">
+      <node ref="U2" pin="15"/>
+    </net>
+    <net code="25" name="Net-(U2-Pad16)">
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="26" name="Net-(U2-Pad18)">
+      <node ref="U2" pin="18"/>
+    </net>
+    <net code="27" name="Net-(U2-Pad19)">
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="28" name="Net-(D14-Pad2)">
+      <node ref="R27" pin="1"/>
+      <node ref="D14" pin="2"/>
+    </net>
+    <net code="29" name="Net-(U2-Pad20)">
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="30" name="/EncoderSw">
+      <node ref="J3" pin="9"/>
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="31" name="/EncoderA">
+      <node ref="U2" pin="7"/>
+      <node ref="J3" pin="7"/>
+    </net>
+    <net code="32" name="/EncoderB">
+      <node ref="U2" pin="8"/>
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="33" name="Net-(D7-Pad1)">
+      <node ref="R16" pin="1"/>
+      <node ref="Q5" pin="2"/>
+      <node ref="D7" pin="1"/>
+      <node ref="R20" pin="2"/>
+    </net>
+    <net code="34" name="Net-(U2-Pad39)">
+      <node ref="U2" pin="39"/>
+    </net>
+    <net code="35" name="Net-(U2-Pad38)">
+      <node ref="U2" pin="38"/>
+    </net>
+    <net code="36" name="Net-(U2-Pad37)">
+      <node ref="U2" pin="37"/>
+    </net>
+    <net code="37" name="Net-(U2-Pad36)">
+      <node ref="U2" pin="36"/>
+    </net>
+    <net code="38" name="Net-(U2-Pad35)">
+      <node ref="U2" pin="35"/>
+    </net>
+    <net code="39" name="Net-(U2-Pad34)">
+      <node ref="U2" pin="34"/>
+    </net>
+    <net code="40" name="/DigiOut_out">
+      <node ref="U2" pin="11"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="41" name="/DigiOut_Thru">
+      <node ref="U1" pin="12"/>
+      <node ref="U2" pin="12"/>
+    </net>
+    <net code="42" name="/Rin_F">
+      <node ref="J5" pin="8"/>
+      <node ref="Reset_In1" pin="3"/>
+    </net>
+    <net code="43" name="/+3_3V">
+      <node ref="SW2" pin="S1"/>
+      <node ref="J3" pin="3"/>
+      <node ref="U2" pin="31"/>
+      <node ref="RV2" pin="3"/>
+      <node ref="D8" pin="1"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="J4" pin="3"/>
+      <node ref="RV3" pin="3"/>
+    </net>
+    <net code="44" name="/Pot_Length">
+      <node ref="U2" pin="25"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="45" name="/Pot_Divisions">
+      <node ref="J3" pin="5"/>
+      <node ref="U2" pin="26"/>
+    </net>
+    <net code="46" name="/Pot_CVamt">
+      <node ref="U2" pin="22"/>
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="47" name="/OutC_F">
+      <node ref="Q1" pin="2"/>
+      <node ref="CycleOutJack1" pin="3"/>
+      <node ref="J5" pin="3"/>
+    </net>
+    <net code="48" name="/OutM_F">
+      <node ref="Q2" pin="2"/>
+      <node ref="J5" pin="4"/>
+      <node ref="DigiOutJack1" pin="3"/>
+    </net>
+    <net code="49" name="+12V">
+      <node ref="C1" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="J6" pin="2"/>
+      <node ref="J5" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="D3" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="50" name="/OutT_F">
+      <node ref="Q3" pin="2"/>
+      <node ref="DigiThruJack1" pin="3"/>
+      <node ref="J5" pin="5"/>
+    </net>
+    <net code="51" name="/CVin_F">
+      <node ref="CV_in1" pin="3"/>
+      <node ref="J5" pin="6"/>
+    </net>
+    <net code="52" name="/CLin_F">
+      <node ref="J5" pin="7"/>
+      <node ref="Trigger/Clock_in1" pin="3"/>
+    </net>
+    <net code="53" name="-12V">
+      <node ref="D2" pin="2"/>
+      <node ref="U1" pin="11"/>
+      <node ref="R13" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="54" name="/SW_CVassgn_F">
+      <node ref="J4" pin="12"/>
+      <node ref="SW3" pin="2"/>
+    </net>
+    <net code="55" name="/LED_Sh_F">
+      <node ref="R27" pin="2"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="56" name="/LED_L_F">
+      <node ref="R24" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="57" name="/LED_D_F">
+      <node ref="J1" pin="2"/>
+      <node ref="R25" pin="2"/>
+    </net>
+    <net code="58" name="/Led_Shi_F">
+      <node ref="R26" pin="2"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="59" name="/Led_ShCV_F">
+      <node ref="R28" pin="2"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="60" name="/CV_ind_LED_shift">
+      <node ref="J2" pin="3"/>
+      <node ref="U2" pin="27"/>
+    </net>
+    <net code="61" name="/CV_ind_LED_shuffle">
+      <node ref="U2" pin="24"/>
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="62" name="/Rin_B">
+      <node ref="J6" pin="8"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="63" name="/OutC_B">
+      <node ref="J6" pin="3"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="64" name="/OutM_B">
+      <node ref="J6" pin="4"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="65" name="/OutT_B">
+      <node ref="R9" pin="1"/>
+      <node ref="J6" pin="5"/>
+    </net>
+    <net code="66" name="/CVin_B">
+      <node ref="J6" pin="6"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="67" name="/CLin_B">
+      <node ref="R15" pin="2"/>
+      <node ref="J6" pin="7"/>
+    </net>
+    <net code="68" name="Net-(D6-Pad1)">
+      <node ref="D6" pin="1"/>
+      <node ref="R19" pin="2"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="69" name="/Trigger_in">
+      <node ref="U2" pin="13"/>
+      <node ref="Q4" pin="3"/>
+    </net>
+    <net code="70" name="/Cycle_in">
+      <node ref="U2" pin="28"/>
+      <node ref="Q5" pin="3"/>
+    </net>
+    <net code="71" name="+5V">
+      <node ref="H1" pin="6"/>
+      <node ref="H1" pin="5"/>
+      <node ref="U2" pin="33"/>
+    </net>
+    <net code="72" name="Net-(R17-Pad1)">
+      <node ref="U1" pin="2"/>
+      <node ref="R17" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="73" name="/Vref">
+      <node ref="R14" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="74" name="Net-(H1-Pad4)">
+      <node ref="H1" pin="4"/>
+    </net>
+    <net code="75" name="Net-(H1-Pad2)">
+      <node ref="H1" pin="2"/>
+    </net>
+    <net code="76" name="Net-(H1-Pad3)">
+      <node ref="H1" pin="3"/>
+    </net>
+    <net code="77" name="Net-(H1-Pad1)">
+      <node ref="H1" pin="1"/>
+    </net>
+    <net code="78" name="/-12V_in">
+      <node ref="H1" pin="16"/>
+      <node ref="H1" pin="15"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="79" name="/+12V_in">
+      <node ref="D1" pin="2"/>
+      <node ref="H1" pin="8"/>
+      <node ref="H1" pin="7"/>
+    </net>
+    <net code="80" name="/LED_Sh_B">
+      <node ref="J2" pin="5"/>
+      <node ref="U2" pin="23"/>
+    </net>
+    <net code="81" name="Net-(R21-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="R22" pin="2"/>
+      <node ref="R21" pin="1"/>
+    </net>
+    <net code="82" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1"/>
+      <node ref="Q2" pin="3"/>
+    </net>
+    <net code="83" name="Net-(Q2-Pad1)">
+      <node ref="R11" pin="2"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="84" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="85" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="86" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="87" name="Net-(R5-Pad1)">
+      <node ref="U1" pin="8"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="88" name="Net-(DigiOutJack1-Pad2)">
+      <node ref="DigiOutJack1" pin="2"/>
+    </net>
+    <net code="89" name="Net-(D5-Pad1)">
+      <node ref="Q3" pin="3"/>
+      <node ref="D5" pin="1"/>
+    </net>
+    <net code="90" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="91" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="92" name="Net-(R6-Pad1)">
+      <node ref="U1" pin="14"/>
+      <node ref="R9" pin="2"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="93" name="Net-(DigiThruJack1-Pad2)">
+      <node ref="DigiThruJack1" pin="2"/>
+    </net>
+    <net code="94" name="/CV_in">
+      <node ref="R22" pin="1"/>
+      <node ref="U2" pin="21"/>
+      <node ref="D8" pin="2"/>
+      <node ref="D9" pin="1"/>
+    </net>
+    <net code="95" name="Net-(R1-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="U1" pin="6"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="96" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="7"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="97" name="Net-(CycleOutJack1-Pad2)">
+      <node ref="CycleOutJack1" pin="2"/>
+    </net>
+    <net code="98" name="/DigiOut_Cycle">
+      <node ref="U1" pin="5"/>
+      <node ref="U2" pin="10"/>
+    </net>
+  </nets>
+</export>
