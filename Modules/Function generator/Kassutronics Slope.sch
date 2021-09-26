@@ -170,7 +170,7 @@ U 1 1 606DF392
 P 7750 3700
 F 0 "D5" V 7704 3780 50  0000 L CNN
 F 1 "7.5V" V 7795 3780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 7750 3700 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7750 3700 50  0001 C CNN
 F 3 "~" H 7750 3700 50  0001 C CNN
 	1    7750 3700
 	0    1    1    0   
@@ -181,7 +181,7 @@ U 1 1 606E03FC
 P 7750 4150
 F 0 "D6" V 7796 4070 50  0000 R CNN
 F 1 "7.5V" V 7705 4070 50  0000 R CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 7750 4150 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7750 4150 50  0001 C CNN
 F 3 "~" H 7750 4150 50  0001 C CNN
 	1    7750 4150
 	0    -1   -1   0   
@@ -742,7 +742,7 @@ U 1 1 607E53D0
 P 8625 8100
 F 0 "D8" V 8579 8180 50  0000 L CNN
 F 1 "7.5V" V 8670 8180 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 8625 8100 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 8625 8100 50  0001 C CNN
 F 3 "~" H 8625 8100 50  0001 C CNN
 	1    8625 8100
 	0    1    1    0   
@@ -1949,7 +1949,7 @@ U 1 1 60E36AB0
 P 22525 2200
 F 0 "D19" V 22479 2280 50  0000 L CNN
 F 1 "7.5V" V 22570 2280 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 22525 2200 50  0001 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 22525 2200 50  0001 C CNN
 F 3 "~" H 22525 2200 50  0001 C CNN
 	1    22525 2200
 	0    1    1    0   
@@ -3403,7 +3403,7 @@ Wire Wire Line
 	20275 10825 21225 10825
 Connection ~ 21225 10825
 Text Notes 650  1200 0    50   ~ 0
-BOM notes:\n \nZeners = 1N4737 ( Tayda A-173 )\n\n"LR" indicates that you might need to change the resistor value depending on which LED you're using\n
+BOM notes:\n \nZeners = 1N5246B ( Tayda A-4093 ) \n\n"LR" indicates that you might need to change the resistor value depending on which LED you're using\n
 Wire Wire Line
 	2300 12575 2325 12575
 Wire Wire Line
@@ -3548,8 +3548,8 @@ Text GLabel 13950 14050 3    50   Input ~ 0
 HOLD_INPUT_t
 Text GLabel 13950 13400 1    50   Input ~ 0
 HOLD_INPUT
-Text Notes 700  1675 0    50   ~ 0
-To do:\n\nConsider moving D14 to lower PCB?\nCheck diode types\nGate output levels : Should we use zener diodes to give well-defined gate levels?
+Text Notes 675  1600 0    50   ~ 0
+To do:\n\nConsider moving D14 to lower PCB?\nCheck diode types
 $Comp
 L power:GND #PWR0102
 U 1 1 62362B76
