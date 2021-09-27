@@ -14,13 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 3525 950  0    50   ~ 0
--Check the orientation of pots\n- check LED current\n- Check comparator is the correct way round\n- add voltage regulator\n- check comparator pinouts. ( opamps and comparators may be gotten switches somehow? )
+- Maybe just add another input for straight-through CV?\n- \n-Check the orientation of pots\n- check LED current\n- Check comparator is the correct way round\n- add voltage regulator\n- check comparator pinouts. ( opamps and comparators may be gotten switches somehow? )\n- Do we need to worry about offset voltage for the first opamps?
 $Comp
 L Comparator:LM339 U1
 U 5 1 61521BFE
 P 2375 3525
 F 0 "U1" H 2333 3571 50  0000 L CNN
-F 1 "TL074" H 2333 3480 50  0000 L CNN
+F 1 "LM339" H 2333 3480 50  0000 L CNN
 F 2 "" H 2325 3625 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 2425 3725 50  0001 C CNN
 	5    2375 3525
@@ -106,7 +106,7 @@ L Device:R R1
 U 1 1 61521C34
 P 875 3250
 F 0 "R1" H 945 3296 50  0000 L CNN
-F 1 "200k" H 945 3205 50  0000 L CNN
+F 1 "100k" H 945 3205 50  0000 L CNN
 F 2 "" V 805 3250 50  0001 C CNN
 F 3 "~" H 875 3250 50  0001 C CNN
 	1    875  3250
@@ -117,7 +117,7 @@ L Device:R R2
 U 1 1 61521C3A
 P 875 3650
 F 0 "R2" H 945 3696 50  0000 L CNN
-F 1 "47k" H 945 3605 50  0000 L CNN
+F 1 "10k" H 945 3605 50  0000 L CNN
 F 2 "" V 805 3650 50  0001 C CNN
 F 3 "~" H 875 3650 50  0001 C CNN
 	1    875  3650
@@ -255,7 +255,7 @@ Wire Wire Line
 	9425 3000 9550 3000
 Connection ~ 9425 3000
 $Comp
-L Device:R_POT RV2
+L eurocad:Potentiometer RV2
 U 1 1 61559C70
 P 8250 3100
 F 0 "RV2" H 8181 3146 50  0000 R CNN
@@ -503,8 +503,8 @@ Wire Wire Line
 	7225 2900 7225 2850
 Wire Notes Line
 	10100 2250 3725 2250
-Text Notes 9025 3325 0    50   ~ 0
-Output between +-1.5V
+Text Notes 9100 3425 0    50   ~ 0
+Output between \n+1.5V ( pot CW )\n- 1.5V ( pot CCW )
 $Comp
 L eurocad:PJ301M-12 J5
 U 1 1 615D04C4
@@ -649,7 +649,7 @@ Wire Wire Line
 	7025 9875 7150 9875
 Connection ~ 7025 9875
 $Comp
-L Device:R_POT RV1
+L eurocad:Potentiometer RV1
 U 1 1 61638EC0
 P 5850 9975
 F 0 "RV1" H 5781 10021 50  0000 R CNN
@@ -681,8 +681,8 @@ Wire Wire Line
 	6350 9775 6375 9775
 Text GLabel 7150 9875 2    50   Input ~ 0
 -Threshold
-Text Notes 6500 10400 0    50   ~ 0
-Output between +-5V\n\nCW = NEGATIVE output ( for +ve input )
+Text Notes 6750 10775 0    50   ~ 0
+With +5V input:\n\n-Threshold goes between\n-5V ( pot CW )\n+5V ( pot CCW )\n\nSo +threshold goes between\n+5V ( power CW )\n- 5V ( pot CCW )
 Wire Wire Line
 	5225 9775 5850 9775
 Connection ~ 5850 9775
@@ -968,11 +968,11 @@ L Comparator:LM339 U1
 U 1 1 6152DB66
 P 6700 3350
 F 0 "U1" H 6700 3175 50  0000 C CNN
-F 1 "TL074" H 6650 3350 50  0000 C CNN
+F 1 "LM339" H 6650 3350 50  0000 C CNN
 F 2 "" H 6650 3450 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 6750 3550 50  0001 C CNN
 	1    6700 3350
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2475 3875 2475 3950
@@ -994,37 +994,6 @@ Wire Wire Line
 Connection ~ 2700 3525
 Wire Wire Line
 	2700 3525 2700 3625
-Wire Wire Line
-	5675 3450 5950 3450
-$Comp
-L Device:R R6
-U 1 1 6189D302
-P 5950 3700
-F 0 "R6" V 6125 3700 50  0000 C CNN
-F 1 "10k" V 6050 3700 50  0000 C CNN
-F 2 "" V 5880 3700 50  0001 C CNN
-F 3 "~" H 5950 3700 50  0001 C CNN
-	1    5950 3700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5950 3450 5950 3550
-Connection ~ 5950 3450
-Wire Wire Line
-	5950 3450 6225 3450
-$Comp
-L power:GND #PWR08
-U 1 1 618A3B26
-P 5950 3900
-F 0 "#PWR08" H 5950 3650 50  0001 C CNN
-F 1 "GND" V 5955 3772 50  0000 R CNN
-F 2 "" H 5950 3900 50  0001 C CNN
-F 3 "" H 5950 3900 50  0001 C CNN
-	1    5950 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 3850 5950 3900
 Text Notes 5675 8475 0    50   ~ 0
 Resistor grounds the signal\nif the input is left floating\n( eg unconnected wire )\n\nDiode ensures that the input doesn't go \nbelow the -ve rail of the comparator
 Text GLabel 2475 3950 3    50   Input ~ 0
@@ -1190,7 +1159,7 @@ Wire Wire Line
 	9450 4825 9575 4825
 Connection ~ 9450 4825
 $Comp
-L Device:R_POT RV3
+L eurocad:Potentiometer RV3
 U 1 1 6191F02A
 P 8275 4925
 F 0 "RV3" H 8206 4971 50  0000 R CNN
@@ -1242,50 +1211,17 @@ Wire Wire Line
 Connection ~ 7250 4725
 Wire Wire Line
 	7250 4725 7250 4675
-Text Notes 9050 5150 0    50   ~ 0
-Output between +-1.5V
 $Comp
 L Comparator:LM339 U1
 U 2 1 6191F048
 P 6725 5175
 F 0 "U1" H 6725 5000 50  0000 C CNN
-F 1 "TL074" H 6675 5175 50  0000 C CNN
+F 1 "LM339" H 6675 5175 50  0000 C CNN
 F 2 "" H 6675 5275 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 6775 5375 50  0001 C CNN
 	2    6725 5175
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	5700 5275 5975 5275
-$Comp
-L Device:R R7
-U 1 1 6191F04F
-P 5975 5525
-F 0 "R7" V 6150 5525 50  0000 C CNN
-F 1 "10k" V 6075 5525 50  0000 C CNN
-F 2 "" V 5905 5525 50  0001 C CNN
-F 3 "~" H 5975 5525 50  0001 C CNN
-	1    5975 5525
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5975 5275 5975 5375
-Connection ~ 5975 5275
-Wire Wire Line
-	5975 5275 6250 5275
-$Comp
-L power:GND #PWR09
-U 1 1 6191F058
-P 5975 5725
-F 0 "#PWR09" H 5975 5475 50  0001 C CNN
-F 1 "GND" V 5980 5597 50  0000 R CNN
-F 2 "" H 5975 5725 50  0001 C CNN
-F 3 "" H 5975 5725 50  0001 C CNN
-	1    5975 5725
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5975 5675 5975 5725
 $Comp
 L power:GND #PWR017
 U 1 1 6191F05F
@@ -1445,7 +1381,7 @@ Wire Wire Line
 	9475 6650 9600 6650
 Connection ~ 9475 6650
 $Comp
-L Device:R_POT RV4
+L eurocad:Potentiometer RV4
 U 1 1 6193D731
 P 8300 6750
 F 0 "RV4" H 8231 6796 50  0000 R CNN
@@ -1497,39 +1433,6 @@ Wire Wire Line
 Connection ~ 7275 6550
 Wire Wire Line
 	7275 6550 7275 6500
-Text Notes 9075 6975 0    50   ~ 0
-Output between +-1.5V
-Wire Wire Line
-	5725 7100 6000 7100
-$Comp
-L Device:R R8
-U 1 1 6193D756
-P 6000 7350
-F 0 "R8" V 6175 7350 50  0000 C CNN
-F 1 "10k" V 6100 7350 50  0000 C CNN
-F 2 "" V 5930 7350 50  0001 C CNN
-F 3 "~" H 6000 7350 50  0001 C CNN
-	1    6000 7350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6000 7100 6000 7200
-Connection ~ 6000 7100
-Wire Wire Line
-	6000 7100 6275 7100
-$Comp
-L power:GND #PWR010
-U 1 1 6193D75F
-P 6000 7550
-F 0 "#PWR010" H 6000 7300 50  0001 C CNN
-F 1 "GND" V 6005 7422 50  0000 R CNN
-F 2 "" H 6000 7550 50  0001 C CNN
-F 3 "" H 6000 7550 50  0001 C CNN
-	1    6000 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 7500 6000 7550
 $Comp
 L power:GND #PWR018
 U 1 1 6193D766
@@ -1601,7 +1504,7 @@ F 1 "LM339" H 6700 7000 50  0000 C CNN
 F 2 "" H 6700 7100 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 6800 7200 50  0001 C CNN
 	3    6750 7000
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Comparator:LM339 U?
@@ -1622,8 +1525,6 @@ Wire Wire Line
 	5475 10575 5050 10575
 Wire Wire Line
 	5225 9875 5475 9875
-Text GLabel 5050 10575 0    50   Input ~ 0
--5V_regulated
 Text GLabel 12525 7850 0    50   Input ~ 0
 -Threshold
 Wire Wire Line
@@ -2186,4 +2087,179 @@ Text Notes 12200 9725 0    50   ~ 0
 Much simpler, and easier to incorporate LED\nBut the gate out level may be more variable? And there may be some crosstalk? Check.\nHow close will the "off" signal be to 0V? 
 Text Notes 12150 6450 0    50   ~ 0
 Possible advantages: \nGate out varies cleanly between 0V and 10V
+Text Notes 1375 3575 0    50   ~ 0
+1.2V
+Text Notes 5925 3175 0    50   ~ 0
+1.2V
+Wire Wire Line
+	6000 7500 6000 7550
+$Comp
+L power:GND #PWR010
+U 1 1 6193D75F
+P 6000 7550
+F 0 "#PWR010" H 6000 7300 50  0001 C CNN
+F 1 "GND" V 6005 7422 50  0000 R CNN
+F 2 "" H 6000 7550 50  0001 C CNN
+F 3 "" H 6000 7550 50  0001 C CNN
+	1    6000 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 7100 6275 7100
+Wire Wire Line
+	5725 7100 6000 7100
+Connection ~ 6000 7100
+Wire Wire Line
+	6000 7100 6000 7200
+$Comp
+L Device:R R8
+U 1 1 6193D756
+P 6000 7350
+F 0 "R8" V 6175 7350 50  0000 C CNN
+F 1 "100k" V 6100 7350 50  0000 C CNN
+F 2 "" V 5930 7350 50  0001 C CNN
+F 3 "~" H 6000 7350 50  0001 C CNN
+	1    6000 7350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5975 5675 5975 5725
+$Comp
+L power:GND #PWR09
+U 1 1 6191F058
+P 5975 5725
+F 0 "#PWR09" H 5975 5475 50  0001 C CNN
+F 1 "GND" V 5980 5597 50  0000 R CNN
+F 2 "" H 5975 5725 50  0001 C CNN
+F 3 "" H 5975 5725 50  0001 C CNN
+	1    5975 5725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 5275 6250 5275
+Wire Wire Line
+	5700 5275 5975 5275
+Connection ~ 5975 5275
+Wire Wire Line
+	5975 5275 5975 5375
+$Comp
+L Device:R R7
+U 1 1 6191F04F
+P 5975 5525
+F 0 "R7" V 6150 5525 50  0000 C CNN
+F 1 "100k" V 6075 5525 50  0000 C CNN
+F 2 "" V 5905 5525 50  0001 C CNN
+F 3 "~" H 5975 5525 50  0001 C CNN
+	1    5975 5525
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 3450 6225 3450
+Wire Wire Line
+	5675 3450 5950 3450
+Connection ~ 5950 3450
+Wire Wire Line
+	5950 3450 5950 3550
+Wire Wire Line
+	5950 3850 5950 3900
+$Comp
+L power:GND #PWR08
+U 1 1 618A3B26
+P 5950 3900
+F 0 "#PWR08" H 5950 3650 50  0001 C CNN
+F 1 "GND" V 5955 3772 50  0000 R CNN
+F 2 "" H 5950 3900 50  0001 C CNN
+F 3 "" H 5950 3900 50  0001 C CNN
+	1    5950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 6189D302
+P 5950 3700
+F 0 "R6" V 6125 3700 50  0000 C CNN
+F 1 "100k" V 6050 3700 50  0000 C CNN
+F 2 "" V 5880 3700 50  0001 C CNN
+F 3 "~" H 5950 3700 50  0001 C CNN
+	1    5950 3700
+	-1   0    0    1   
+$EndComp
+Text Notes 6525 3800 0    50   ~ 0
+When Input/2 > V_threshold, \ntransistor at output turns on 
+Text Notes 9225 5225 0    50   ~ 0
+Output between \n+1.5V ( pot CW )\n- 1.5V ( pot CCW )
+Text Notes 9225 7075 0    50   ~ 0
+Output between \n+1.5V ( pot CW )\n- 1.5V ( pot CCW )
+$Comp
+L Amplifier_Operational:TL074 U?
+U 1 1 615C6B91
+P 2400 5725
+F 0 "U?" H 2450 5575 50  0000 C CNN
+F 1 "TL074" H 2375 5725 50  0000 C CNN
+F 2 "" H 2350 5825 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 2450 5925 50  0001 C CNN
+	1    2400 5725
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615C6B97
+P 2000 5925
+F 0 "#PWR?" H 2000 5675 50  0001 C CNN
+F 1 "GND" V 2005 5797 50  0000 R CNN
+F 2 "" H 2000 5925 50  0001 C CNN
+F 3 "" H 2000 5925 50  0001 C CNN
+	1    2000 5925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5825 2000 5825
+Wire Wire Line
+	2000 5825 2000 5925
+$Comp
+L Device:R R?
+U 1 1 615C6B9F
+P 2475 5375
+F 0 "R?" V 2400 5375 50  0000 C CNN
+F 1 "100k" V 2475 5375 50  0000 C CNN
+F 2 "" V 2405 5375 50  0001 C CNN
+F 3 "~" H 2475 5375 50  0001 C CNN
+	1    2475 5375
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2325 5375 2050 5375
+Wire Wire Line
+	2625 5375 2800 5375
+$Comp
+L Device:R R?
+U 1 1 615C6BB1
+P 1825 5625
+F 0 "R?" V 1925 5625 50  0000 C CNN
+F 1 "100k" V 1825 5625 50  0000 C CNN
+F 2 "" V 1755 5625 50  0001 C CNN
+F 3 "~" H 1825 5625 50  0001 C CNN
+	1    1825 5625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 5725 2800 5725
+Wire Wire Line
+	1975 5625 2050 5625
+Wire Wire Line
+	2050 5375 2050 5625
+Connection ~ 2050 5625
+Wire Wire Line
+	2050 5625 2100 5625
+Wire Wire Line
+	2800 5375 2800 5725
+Connection ~ 2800 5725
+Wire Wire Line
+	2800 5725 2900 5725
+Text GLabel 2900 5725 2    50   Input ~ 0
++5V_ref
+Text GLabel 1675 5625 0    50   Input ~ 0
+-5V_regulated
+Text GLabel 5050 10575 0    50   Input ~ 0
++5V_ref
 $EndSCHEMATC
