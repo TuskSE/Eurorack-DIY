@@ -155,28 +155,6 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_D
-#
-DEF Device_D D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -50 50 -50 -50 N
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_LED
 #
 DEF Device_LED D 0 40 N N 1 F N
@@ -277,6 +255,26 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Diode_LL4148
+#
+DEF Diode_LL4148 D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Diode_LL4148" 0 -100 50 H V C CNN
+F2 "Diode_SMD:D_MiniMELF" 0 -175 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS LL4448
+$FPLIST
+ D*MiniMELF*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Regulator_Linear_LM79L05_TO92
 #
 DEF Regulator_Linear_LM79L05_TO92 U 0 10 Y Y 1 F N
@@ -301,7 +299,7 @@ ENDDEF
 DEF eurocad_EURO_PWR_2x5 J 0 40 Y Y 1 F N
 F0 "J" 0 -300 60 H V C CNN
 F1 "eurocad_EURO_PWR_2x5" 0 300 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
+F2 "Eurocad:Eurorack_power_header" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
 S -250 250 250 -250 0 1 0 f
@@ -323,7 +321,7 @@ ENDDEF
 DEF eurocad_LED_Bicolor_Tayda_A-1076 D 0 0 Y N 1 F N
 F0 "D" 0 225 50 H V C CNN
 F1 "eurocad_LED_Bicolor_Tayda_A-1076" 0 -250 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+F2 "Eurocad:TaydaA-1076_bicolor_LED" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  LED*
@@ -359,7 +357,7 @@ ENDDEF
 DEF eurocad_PJ301M-12 J 0 40 Y Y 1 F N
 F0 "J" -350 -200 50 H V C CNN
 F1 "eurocad_PJ301M-12" -150 250 50 H V C CNN
-F2 "" 0 0 50 H V C CNN
+F2 "Eurocad:PJ301M-12_Compact" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
 S -450 150 -400 -100 0 1 0 F

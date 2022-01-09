@@ -546,7 +546,7 @@
   )
 
   (module Eurocad:Pothole_Davies1900H_white (layer F.Cu) (tedit 61390F43) (tstamp 61626D74)
-    (at -24.8 37.2)
+    (at -24.75 36.45)
     (fp_text reference Ref** (at -0.25 5.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
