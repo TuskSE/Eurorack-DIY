@@ -82,6 +82,8 @@ Connection ~ 13850 3025
 Connection ~ 14025 9050
 Connection ~ 14550 7975
 Connection ~ 14700 2575
+Connection ~ 14775 7975
+Connection ~ 14875 9050
 Connection ~ 15250 2575
 Connection ~ 15425 2575
 Connection ~ 15450 1450
@@ -704,7 +706,7 @@ Wire Wire Line
 Wire Wire Line
 	13975 7975 14550 7975
 Wire Wire Line
-	14025 9050 14650 9050
+	14025 9050 14875 9050
 Wire Wire Line
 	14025 9325 14025 9050
 Wire Wire Line
@@ -716,13 +718,13 @@ Wire Wire Line
 Wire Wire Line
 	14200 3025 13850 3025
 Wire Wire Line
+	14550 7975 14775 7975
+Wire Wire Line
 	14550 9350 14550 7975
 Wire Wire Line
 	14550 9650 14550 9750
 Wire Wire Line
 	14550 10050 14550 10125
-Wire Wire Line
-	14675 7975 14550 7975
 Wire Wire Line
 	14700 2575 14575 2575
 Wire Wire Line
@@ -732,13 +734,19 @@ Wire Wire Line
 Wire Wire Line
 	14750 2575 14700 2575
 Wire Wire Line
+	14775 7975 14950 7975
+Wire Wire Line
+	14775 8000 14775 7975
+Wire Wire Line
+	14775 8300 14775 8325
+Wire Wire Line
 	14850 13575 14850 13650
 Wire Wire Line
 	14850 14125 14850 14200
 Wire Wire Line
-	14950 9050 15650 9050
+	14875 9050 15000 9050
 Wire Wire Line
-	14975 7975 15625 7975
+	14875 9350 14875 9375
 Wire Wire Line
 	15050 2575 15250 2575
 Wire Wire Line
@@ -751,6 +759,10 @@ Wire Wire Line
 	15250 2575 15425 2575
 Wire Wire Line
 	15250 3300 14450 3300
+Wire Wire Line
+	15250 7975 15625 7975
+Wire Wire Line
+	15300 9050 15650 9050
 Wire Wire Line
 	15400 1450 15450 1450
 Wire Wire Line
@@ -1174,7 +1186,7 @@ EOR comparator\n\nEOR = NOT ( STATE, EOC )
 Text Notes 13850 3800 0    50   ~ 0
 I've stuck in some current limiting + capacitage loading compensation\na la dr sketch-n-etch\nhttps://www.muffwiggler.com/forum/viewtopic.php?t=64576\n\nNot 100% sure how the various things connected to "out" will interact with it though
 Text Notes 14700 7550 0    50   ~ 0
-Original schematic uses TLC3702 comparators \n(push-pull ) to drive the EOR and EOC outputs.  \nTayda only has 339 type ( open collector )\n\nI'm just going to use a TL07x as comparator,\neven though I guess it's sub-optimal
+Original schematic uses TLC3702 comparators \n(push-pull ) to drive the EOR and EOC outputs.  \nTayda only has 339 type ( open collector )\n\nI'm just going to use a TL07x as comparator,\neven though I guess it's sub-optimal\n\nThe 470k resistors ensure that current flows through\nthe diode ( and therefore the "off" voltage is 0v ) \neven if the output it plugged into something with\ninfinitely high input impedance 
 Text Notes 16275 1325 0    50   ~ 0
 pin 1 is the long lead
 Text Notes 17600 10425 0    50   ~ 0
@@ -1999,6 +2011,28 @@ F 1 "GND" H 14755 13952 50  0000 C CNN
 F 2 "" H 14750 14125 50  0001 C CNN
 F 3 "" H 14750 14125 50  0001 C CNN
 	1    14750 14125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 00000000
+P 14775 8325
+F 0 "#PWR018" H 14775 8075 50  0001 C CNN
+F 1 "GND" H 14780 8152 50  0000 C CNN
+F 2 "" H 14775 8325 50  0001 C CNN
+F 3 "" H 14775 8325 50  0001 C CNN
+	1    14775 8325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR067
+U 1 1 00000000
+P 14875 9375
+F 0 "#PWR067" H 14875 9125 50  0001 C CNN
+F 1 "GND" H 14880 9202 50  0000 C CNN
+F 2 "" H 14875 9375 50  0001 C CNN
+F 3 "" H 14875 9375 50  0001 C CNN
+	1    14875 9375
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2981,26 +3015,26 @@ F 3 "~" H 14550 9500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R41
-U 1 1 608C89F8
-P 14800 9050
-F 0 "R41" V 14700 9050 50  0000 C CNN
-F 1 "1k" V 14800 9050 50  0000 C CNN
-F 2 "Eurocad:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder_smallText" V 14730 9050 50  0001 C CNN
-F 3 "~" H 14800 9050 50  0001 C CNN
-	1    14800 9050
-	0    1    1    0   
+L Device:R R55
+U 1 1 00000000
+P 14775 8150
+F 0 "R55" V 14675 8150 50  0000 C CNN
+F 1 "470k" V 14775 8150 50  0000 C CNN
+F 2 "Eurocad:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder_smallText" V 14705 8150 50  0001 C CNN
+F 3 "~" H 14775 8150 50  0001 C CNN
+	1    14775 8150
+	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R42
-U 1 1 608C771F
-P 14825 7975
-F 0 "R42" V 14725 7975 50  0000 C CNN
-F 1 "1k" V 14825 7975 50  0000 C CNN
-F 2 "Eurocad:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder_smallText" V 14755 7975 50  0001 C CNN
-F 3 "~" H 14825 7975 50  0001 C CNN
-	1    14825 7975
-	0    1    1    0   
+L Device:R R56
+U 1 1 00000000
+P 14875 9200
+F 0 "R56" V 14775 9200 50  0000 C CNN
+F 1 "470k" V 14875 9200 50  0000 C CNN
+F 2 "Eurocad:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder_smallText" V 14805 9200 50  0001 C CNN
+F 3 "~" H 14875 9200 50  0001 C CNN
+	1    14875 9200
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R44
@@ -3012,6 +3046,28 @@ F 2 "Eurocad:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder_smallText" V 14830 2575
 F 3 "~" H 14900 2575 50  0001 C CNN
 	1    14900 2575
 	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R42
+U 1 1 608C771F
+P 15100 7975
+F 0 "R42" V 15000 7975 50  0000 C CNN
+F 1 "1k" V 15100 7975 50  0000 C CNN
+F 2 "Eurocad:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder_smallText" V 15030 7975 50  0001 C CNN
+F 3 "~" H 15100 7975 50  0001 C CNN
+	1    15100 7975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R41
+U 1 1 608C89F8
+P 15150 9050
+F 0 "R41" V 15050 9050 50  0000 C CNN
+F 1 "1k" V 15150 9050 50  0000 C CNN
+F 2 "Eurocad:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder_smallText" V 15080 9050 50  0001 C CNN
+F 3 "~" H 15150 9050 50  0001 C CNN
+	1    15150 9050
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R45
