@@ -58,6 +58,7 @@ A clock-synced LFO built around the Electric Druid Tap LFO IC. The current versi
 A quad VCA built around the V2164 IC. Each channel has 2 CV attenuverters, one normalized to a 5V input. There's also a panning mixer integrated. v1 of the PCB had a couple of major issues which are awaiting correction. I think I may also rethink the control ranges etc.
  
 <img src="Modules/VCA/pics/VCA%20photo.png" height = 300 >    <img src="Modules/VCA/pics/VCA%20board%20photo%202.jpg" height = 300 >
+
 <img src="Modules/VCA/pics/VCA%20front.png" height = 300 >    <img src="Modules/VCA/pics/VCA%20back.png" height = 300 >
 
 **Pedal interface**
