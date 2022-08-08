@@ -12,7 +12,7 @@ A bank of 3 bandpass filters, with options mixing and phase inversion options. S
 **CP3 Mixer**
 A very generic transistor-type mixer. PCB layout complete, awaiting fabrication.
 
-< img src="Modules/CP3 mixer/pics/CP3%20mixer.png" height = 100 >
+<img src="Modules/CP3 mixer/pics/CP3%20mixer.png" height = 100 >
 
 **Dual VCO**
 A pair of utility VCOs/LFOs derived from the NonLinearCircuits Dual LFO/VCO, but with added FM inputs ( log on one, lin on the other ) and no sync inputs. PCB layout essentially finished, but I want to go back and rethink the voltage reference before sending it for fabrication.
